@@ -1,0 +1,23 @@
+﻿<link href="~/admin/vendors/datatables.net-bs5/datatables.bootstrap5.css" rel="stylesheet" />
+<script src="~/admin/vendors/datatables.net-bs5/datatables.bootstrap5.js"></script>
+<script>
+
+    function createDatatable(u, c, e) {
+        return $('.datatable').DataTable({
+            processing: true,
+            serverSide: true,
+            scrollX: true,
+
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.13.4/i18n/tr.json',
+            },
+            ajax: {
+                url: u,
+                method: 'GET'
+            },
+            columns: c,
+            
+        }).on('draw', e);
+    }
+
+</script>

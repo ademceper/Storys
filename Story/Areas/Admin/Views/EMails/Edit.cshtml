@@ -1,0 +1,39 @@
+﻿@model Story.Data.EMail
+
+@{
+    ViewData["Title"] = "Güncelleme";
+}
+
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label">Konu</label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Body">Mesaj</label>
+        <textarea asp-for="Body" class="form-control" placeholder="Masal İçeriğini Giriniz" id="Text" style="height: 100px"></textarea>
+        <span asp-validation-for="Body"></span>
+            <div class="form-group">
+                <label asp-for="Time" class="control-label">Saat</label>
+                <input asp-for="Time" class="form-control" />
+                <span asp-validation-for="Time" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Enabled" /> @Html.DisplayNameFor(model => model.Enabled)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+                 <a asp-action="Index">İptal</a>
+            </div>
+        </form>
+ 
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

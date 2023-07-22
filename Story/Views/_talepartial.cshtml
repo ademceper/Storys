@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Tale>
+
+
+<div class="row row-cols-1 row-cols-md-5 g-4">
+    @foreach (var product in ViewBag.MostViews as IEnumerable<Tale>)
+    {
+        <div class="col ">
+            <div class="card h-100 box ">
+                <a asp-action="Tale" asp-route-id="@product.Id">
+                    <img class="card-img-top" src="@product.Photo" />
+                </a>
+                <div class="card-body shadow">
+                    <div class="card-title h6 text-truncate">
+                        <a asp-action="Tale" asp-route-id="@product.Id" class="text-decoration-none">
+                            @product.Title
+                        </a>
+                    </div>
+                    <div class="card-text">@product.Text</div>
+                    <div class="small">@product.Date</div>
+                 
+
+                    
+                </div>
+            </div>
+        </div>
+    }
+</div>

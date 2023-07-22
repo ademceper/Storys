@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Plugin Bundle</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="../js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="../index.html"><img src="../images/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.jpg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="ti-shopping-cart mx-0"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Buy Now</p>
+              <a href="https://codecanyon.net/user/rocketsoft" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="ti-world mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Purchase Script</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Price : $55
+                  </p>
+                </div>
+              </a>
+              <a href="https://codecanyon.net/user/rocketsoft" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-package mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Purchase Plugins</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    from $19
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+       
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+   
+      
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav user-select-none">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="ti-world menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#general" aria-expanded="false" aria-controls="general">
+              <i class="ti-briefcase menu-icon"></i>
+              <span class="menu-title">General</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="general">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./introduction.html">Introduction</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./license.html">License Activation</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./support.html">Get Support</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./plugin.html">Plugin Bundle</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#installation" aria-expanded="false" aria-controls="installation">
+              <i class="ti-package menu-icon"></i>
+              <span class="menu-title">Installation</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="installation">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="./important.html">Important Points</a></li>
+                <li class="nav-item"><a class="nav-link" href="./requirements.html">Requirements</a></li>
+                <li class="nav-item"><a class="nav-link" href="./hosting_recommendation.html">Hosting</a></li>
+                <li class="nav-item"><a class="nav-link" href="./preparing.html">Preparing</a></li>
+                <li class="nav-item"><a class="nav-link" href="./installation.html">Installation</a></li>
+                <li class="nav-item"><a class="nav-link" href="./update.html">How to Update</a></li>
+                <li class="nav-item"><a class="nav-link" href="./access_admin_panel.html">Access Admin Panel</a></li>
+                <li class="nav-item"><a class="nav-link" href="./maintenance.html">Maintenance Mode</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#content" aria-expanded="false" aria-controls="content">
+              <i class="ti-write menu-icon"></i>
+              <span class="menu-title">Content</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="content">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./create_a_class.html">Create a Class</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./review_classes.html">Review a Class</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./conduct_live_classes.html">Conducting Live Classes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./categories.html">Class Categories</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./filters.html">Class Filters</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./quizzes.html">Quizz & Certificates</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./certificate_validation.html">Certificate Validation</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./meetings.html">Meetings</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./class_reviews.html">Class Reviews</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./create_custom_pages.html">Custom Pages</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./footer.html">Footer</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#users" aria-expanded="false" aria-controls="users">
+              <i class="ti-user menu-icon"></i>
+              <span class="menu-title">Users</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="users">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./user_roles.html">User Roles</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./user_groups.html">User Groups</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./become_instructor.html">Become Instructor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./organization_users.html">Organization Users</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#crm" aria-expanded="false" aria-controls="crm">
+              <i class="ti-direction-alt menu-icon"></i>
+              <span class="menu-title">CRM</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="crm">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./notification_templates.html">Notifications</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./noticeboard.html">Noticeboard</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./class_support_messages.html">Classes Support</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./reports.html">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#marketing" aria-expanded="false" aria-controls="marketing">
+              <i class="ti-pie-chart menu-icon"></i>
+              <span class="menu-title">Marketing</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="marketing">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./discount_code.html">Discount Codes</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#financial" aria-expanded="false" aria-controls="financial">
+              <i class="ti-money menu-icon"></i>
+              <span class="menu-title">Financial</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="financial">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./balances_list.html">Balances List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./payout_requests.html">Request Payout</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./payout.html">Payout Process</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./offline_payment.html">Offline Payments</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./subscribe.html">Subscribe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./sales_list.html">Sales List</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="settings">
+              <i class="ti-settings menu-icon"></i>
+              <span class="menu-title">Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="settings">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./general_settings.html">General</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./financial_settings.html">Financial</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./payment_gateways.html">Payment Gateways</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./personalization.html">Personalization</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./seo.html">SEO Settings</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./seo.html">Security Settings</a></li>
+
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#configuration" aria-expanded="false" aria-controls="configuration">
+              <i class="ti-panel menu-icon"></i>
+              <span class="menu-title">Configuration</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="configuration">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./smtp.html">SMTP Configuration</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./zoom.html">Zoom Integration</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./amazon_s3.html">Amazon S3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./debugger.html">Debugger</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./file_manager.html">File Manager</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./google_sign_in.html">Google Sign-in</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./cronjobs.html">CronJobs</a></li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#cutomization" aria-expanded="false" aria-controls="cutomization">
+              <i class="ti-palette menu-icon"></i>
+              <span class="menu-title">Cutomization</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="cutomization">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./language.html">Languages</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./custom_css_js.html">Custom CSS & JS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./timezone.html">Timezone</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./colors.html">Change Colors</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./fonts.html">Change Fonts</a></li>
+
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./credits.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Credits</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      <!-- content -->
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="mb-3 font-weight-bold">Plugin Bundle</h3>  
+                  <h5 class="font-weight-normal" style="line-height: 180%;">
+
+
+
+                    <div class="row">
+                      <div>
+                         <img style="float: left; margin: 15px 0px 20px 0px;" class="rounded mx-auto d-block" src="../images/plugin.jpg"  />
+                      </div>
+                     </div> 
+                     <p>&nbsp;</p>
+                     In this section, we are going to introduce Rocket LMS plugins that bring more power to your platform. You can purchase these plugins and add new features to your platform.
+                     <p>&nbsp;</p>
+
+                     <p><strong>Subscription:</strong></p>
+                     <p>Enables subscription plans for your LMS. Users will be able to purchase subscription plans and enroll in classes using them. Each subscription plan could be limited with time and subscription count. Subscription plans don&rsquo;t have any conflict with the normal purchase process, so you will be able to use both subscription and direct purchases at the same time.</p>
+                     <p><strong>Offline payments:</strong></p>
+                     <p>You will be able to add your bank accounts, and users will see bank accounts in frontend and will be able to submit their transactions. If you approve transactions, the amount will be added to the user account.</p>
+                     <p><strong>Payment Gateways Pack:</strong></p>
+                     <p>Includes additional payment gateways such as Stripe, Paytm, Paystack, Flutterwave, Bitpay, Payfort, Iyzico, Robokassa, CashU, Midtrans, Mercadopago, Zarinpal, Mollie, N-Genius, Alipay, Authorize.net, Instamojo, Izipay, Klarna, Sslcommerz, Payku, Payhere, Paysera, Voguepay, Paylink, Toyyibpay, Jazzcash.</p>
+                     <p><strong>Quiz &amp; Certification:</strong></p>
+                     <p>Create unlimited various quizzes with different options (Duration, Descriptive, multiple-choice &amp; image questions, Attempts), Auto and manual correction, Automatic result calculation, Show correct answers and solutions after a quiz is finished.</p>
+                     <p>Create certificates with customized templates. Users will be able to validate certificates through the certificate validation page and check the certificate information.</p>
+                     <p><strong>Meeting Booking:</strong></p>
+                     <p>Instructors will be able to define their meeting timesheet and define their hourly rate. Users will be able to book meetings and reserve time slots using the calendar.</p>
+                     <p>They will be able to add meeting times to Google Calendar and receive automatic reminders.</p>
+                     <p><strong>Text Courses:</strong></p>
+                     <p>Create unlimited text-based courses. Each text lesson could include videos and downloadable files in addition to text content.</p>
+                     <p><strong>SMS Authentication:</strong></p>
+                     <p>Use Twilio SMS authentication for user login and registration.</p>
+                     <p><strong>Noticeboard:</strong></p>
+                     <p>This plugin enables sending notices to users for admin and organizations. They will be able to post notices to instructors, students or all users and notices will be displayed on the user panel.</p>
+                     <p><strong>Bigbluebutton Integration:</strong></p>
+                     <p>Conduct unlimited live events on Bigbluebutton for free! All information, such as URLs, passwords, and permissions, will be generated automatically for students and instructors.</p>
+                     <p><strong>Organizational Education:</strong></p>
+                     <p>Enables multi-organization education for your LMS. Each organization could include exclusive instructors and students.</p>
+                     <p><strong>Multi-language Content: </strong></p>
+                     <p>Define website content in different languages. The content will be loaded according to the user's language.</p>
+                     <p><strong>Affiliate &amp; Referral Marketing: </strong></p>
+                     <p>Add more power to your platform using the affiliate marketing feature. Users will be able to sell your platform courses and earn.</p>
+                     <p><strong>SCORM Courses:</strong></p>
+                     <p>Bring an interactive educational experience to your platform. Publish courses made by Adobe Captive, iSpring, or any other software.</p>
+                     <p><strong>Tutor Finder:</strong></p>
+                     <p>Allow users to find the best instructors according to different parameters like tutoring level, tutoring subject, meeting type (Online, In-person), meeting time and day, location on the map, age, and gender. This feature includes a beautiful wizard that gets information from the student and will display the best matches.</p>
+                     <p><strong>Reward Points System:</strong></p>
+                     <p>Create a professional customer loyalty club on your website. Your users will get points according to their different activities like purchasing, charging account, publishing courses, passing a quiz, certificate achievement, comments, course reviews, joining the newsletter, referring users (Affiliate), getting badges, course completion, meeting reservation and engage them with your platform. Users will be able to enroll in courses using points or convert them to account charges.</p>
+                     <p><strong>In-App Live Class System:</strong></p>
+                     <p>Conduct live classes on your platform directly with awesome features like live chat, share screen, etc. Your users won't be redirected to any other third-party app. Imagine a live class screen on your website&hellip; Looks Cool!</p>
+                     <p><strong>SaaS Packages:</strong></p>
+                     <p>Define different service packages and limit different features like courses, meeting time slots, live class capacity, organization instructors, and students for instructors and organizations. Users should upgrade their accounts to reach more features.</p>
+                     <p><strong>Forum &amp; Community <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Add a professional forum and community feature to your LMS platform. Users will be able to create new topics in different categories and communicate together about different subjects.</p>
+                     <p><strong>Course Forum <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Allow course students to ask their questions in the course forum. Other students and the instructor will be able to answer questions. Students can mark resolved questions as "Resolved".</p>
+                     <p><strong>Course Bundle <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Combine several courses as a bundle and sell them together as a bundle.</p>
+                     <p><strong>Store &amp; Marketplace <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Add a multi-vendor marketplace and store feature to your platform and allow users to sell physical &amp; virtual products.</p>
+                     <p><strong>Drip Content <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Restrict the student's access to the course chapters and files by different limitation parameters like time and sequence content. You can force students to access course parts X days after purchasing the course or force them to pass the previous part.</p>
+                     <p><strong>Private Mode <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Do you want to run an LMS solution for internal purposes? By enabling the private mode, you can specify which users can access courses for enrollment.</p>
+                     <p><strong>Manual Enrolment <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Add students to courses, bundles, and products manually from the admin panel.</p>
+                     <p><strong>Assignment &amp; Homework <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Define different assignments for each course with different options like grade, deadline, etc, and make the education process more effective.</p>
+                     <p><strong>Course Statistics &amp; Analytics <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>View course details and statistics in a graphical environment.</p>
+                     <p><strong>Course Noticeboard <span style="color: #3366ff;">(New in v1.6)</span>: </strong></p>
+                     <p>Send different notices to the course students in different colors.&nbsp;</p>
+                     <p><strong>In-app Video Call <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Enjoy the in-app video call experience for conducting meetings directly on the platform. Let users book meetings on the platform and conduct peer-to-peer or group video calls directly on the platform. No need to use any other video calling solution for conducting meetings.</p>
+                     <p><strong>Registration Bonus <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Give your website users a registration bonus and engage visitors to register on your website. Unlock the bonus instantly for users or ask them for certain actions like referring users or making referral purchases to unlock the bonus.</p>
+                     <p><strong>Cashback <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Encourage your platform users to make purchases and recharge a specific percentage or fixed amount to their wallets after making purchases. Define different cashback rules and the amount will be recharged to the user&rsquo;s account after finalizing the payment.</p>
+                     <p><strong>Question Bank <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Define different questions for a quiz and display a specific number of questions to users randomly or sorted. Conduct more accurate quizzes using this feature by presenting random questions to users.</p>
+                     <p><strong>Upcoming Courses <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Let your platform users know about your upcoming courses. Users can follow upcoming courses and they will get informed about the course publishing after publishing the course. Get your course early adaptors before publishing the course.</p>
+                     <p><strong>Installments and Partial Payment <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Sell different materials like courses using the installment (Partial Payment) and define upfront, payment steps, duration, and interest for installments. Disable platform or course access for overdue installments. The system will send payment reminders for each payment.</p>
+                     <p><strong>Secure Host <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Are you worried about your videos and courses for unwanted access or downloading and spreading? Use this feature to preserve your video content from unwanted downloads.</p>
+                     <p><strong>Jitsi Meetings <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Conduct live classes directly on Jitsi and enjoy a low-latency live video experience.</p>
+                     <p><strong>Course Waitlist <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Turn on the waitlist feature for your course and never miss potential students for your courses. Users can join your course waitlist when the capacity is reached or the course is in progress. Inform your waitlist users of future events.</p>
+                     <p><strong>Gift Products <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Allow your platform users to send courses or other materials as gifts to their friends immediately or on a specific date. The recipient will get an email for receiving the gift.</p>
+                     <p><strong>Multi-currency <span style="color: #3366ff;">(New in v1.7)</span>:</strong></p>
+                     <p>Sell your courses in different currencies and convert course prices according to the selected currency. Make specific payment gateways available for each currency. Expand your business worldwide.</p>
+                     
+                     <p><span style="color: #ff0000;">&nbsp;<strong>+ All future plugins.</strong></span></p>
+                    
+                    
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+       <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023. <a href="https://codecanyon.net/user/rocketsoft" target="_blank">Rocket LMS Documentation</a> from <a href="https://codecanyon.net/user/rocketsoft" target="_blank">Rocketsoft</a>. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../vendors/chart.js/Chart.min.js"></script>
+  <script src="../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="../js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../js/off-canvas.js"></script>
+  <script src="../js/hoverable-collapse.js"></script>
+  <script src="../js/template.js"></script>
+  <script src="../js/settings.js"></script>
+  <script src="../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../js/dashboard.js"></script>
+  <script src="../js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

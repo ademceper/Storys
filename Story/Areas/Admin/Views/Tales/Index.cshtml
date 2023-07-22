@@ -1,0 +1,91 @@
+﻿
+@model Tale
+@{
+    ViewData["title"] = "Masallar";
+}
+
+<div class="card container">
+    <div class="card-body">
+        <h2>
+            @ViewData["title"]
+        </h2>
+        <div class="row">
+            <div class="col-12 col-md-3 border-end">
+                <div class="nav flex-column">
+                </div>
+            </div>
+            <div class="col-12 col-md-12">
+                <table class="datatable table table-striped table-bordered">
+                </table>
+            </div>
+        
+        </div>
+        <partial name="_ToolBarPartial" />
+    </div>
+
+
+</div>
+
+@section Scripts{
+    <partial name="_DataTablesPartial" />
+    <script>
+        $(() => {
+            const dt = createDatatable('/admin/tales/tabledata', [
+                {
+                    title: 'Resim',
+                    data: 'photo',
+                    render: (r, i, d, t) => {
+                        return `<img src='${d.photo}' height="80" width="80" />`;
+                    }
+                },
+
+
+                { title: 'Masal Adı', data: 'title' },
+                { title: 'Masal', data: 'text' },
+                 
+
+              
+
+              
+                { title: 'Kayıt Tarihi', data: 'dateCreated' },
+                
+
+
+
+
+
+                {
+                    title: 'işlemler',
+                    data: 'id',
+                    render: (r, i, d, t) => {
+                        return `
+                                                                <a class="btn btn-link" href="/admin/tales/edit/${d.id}"><i class="fa fa-edit"></i> Düzenle</a>
+                                                                                        <a class="btn btn-link remove-btn" href="/admin/tales/delete/${d.id}"><i class="fa fa-trash"></i> Sil</a>
+                                                                `;
+                    }
+                },
+
+            ], () => {
+
+                $('.remove-btn').on('click', (evt) => {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'UYARI!',
+                        html: 'Eminmisiniz?',
+                        showCancelButton: true,
+                        cancelButtonText: 'İptal',
+                        confirmButtonText: 'Sil'
+
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location = $(evt.currentTarget).attr('href');
+                        }
+                    })
+                    return false;
+                });
+
+            });
+
+        })
+    </script>
+}

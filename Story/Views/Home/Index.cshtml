@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using Story.Data;
+@model IEnumerable<Tale>
+
+<section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2>Masallar</h2>
+          
+        </div>
+
+        <div class="row justify-content-center">
+            @foreach (var product in ViewBag.MostViews as IEnumerable<Tale>)
+            {
+                <div class="col-lg-8 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item  position-relative">
+                        <a asp-action="Tale" asp-route-id="@product.Id">
+                            <img style="width: 200px; height: auto;" class="card-img-top me-5" src="@product.Photo"  />
+                        </a>
+                        <a asp-action="Tale" asp-route-id="@product.Id" class="text-decoration-none">
+                            <h3>@product.Title</h3>
+                        </a>
+                        @{
+                            var sentences = product.Text.Split(new[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
+                            var firstThreeSentences = string.Join(".", sentences.Take(3));
+                        }
+                       <p>@(firstThreeSentences + "...")</p>
+
+
+                        <a class="btn btn-outline-warning" asp-route="Tale" asp-route-id="@product.Id" asp-route-name="@product.Title.ToSafeUrlString()">
+                          <i class="bi bi-arrow-right">Devamı için Tıklayınız...</i>
+
+                        </a>
+                        <p>@product.Date</p>
+                    </div>
+                    
+                </div>
+                <hr style="color:white;" />
+
+                <!-- End Service Item -->
+            }
+        </div>
+    </div>
+</section><!-- End Services Section -->

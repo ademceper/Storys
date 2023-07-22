@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Create a class</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="../js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="../index.html"><img src="../images/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../images/logo-mini.jpg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="ti-shopping-cart mx-0"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Buy Now</p>
+              <a href="https://codecanyon.net/user/rocketsoft" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="ti-world mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Purchase Script</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Price : $55
+                  </p>
+                </div>
+              </a>
+              <a href="https://codecanyon.net/user/rocketsoft" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-package mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Purchase Plugins</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    from $19
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+       
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+   
+      
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav user-select-none">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="ti-world menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#general" aria-expanded="false" aria-controls="general">
+              <i class="ti-briefcase menu-icon"></i>
+              <span class="menu-title">General</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="general">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./introduction.html">Introduction</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./license.html">License Activation</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./support.html">Get Support</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./plugin.html">Plugin Bundle</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#installation" aria-expanded="false" aria-controls="installation">
+              <i class="ti-package menu-icon"></i>
+              <span class="menu-title">Installation</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="installation">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="./important.html">Important Points</a></li>
+                <li class="nav-item"><a class="nav-link" href="./requirements.html">Requirements</a></li>
+                <li class="nav-item"><a class="nav-link" href="./hosting_recommendation.html">Hosting</a></li>
+                <li class="nav-item"><a class="nav-link" href="./preparing.html">Preparing</a></li>
+                <li class="nav-item"><a class="nav-link" href="./installation.html">Installation</a></li>
+                <li class="nav-item"><a class="nav-link" href="./update.html">How to Update</a></li>
+                <li class="nav-item"><a class="nav-link" href="./access_admin_panel.html">Access Admin Panel</a></li>
+                <li class="nav-item"><a class="nav-link" href="./maintenance.html">Maintenance Mode</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#content" aria-expanded="false" aria-controls="content">
+              <i class="ti-write menu-icon"></i>
+              <span class="menu-title">Content</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="content">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./create_a_class.html">Create a Class</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./review_classes.html">Review a Class</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./conduct_live_classes.html">Conducting Live Classes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./categories.html">Class Categories</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./filters.html">Class Filters</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./quizzes.html">Quizz & Certificates</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./certificate_validation.html">Certificate Validation</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./meetings.html">Meetings</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./class_reviews.html">Class Reviews</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./create_custom_pages.html">Custom Pages</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./footer.html">Footer</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#users" aria-expanded="false" aria-controls="users">
+              <i class="ti-user menu-icon"></i>
+              <span class="menu-title">Users</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="users">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./user_roles.html">User Roles</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./user_groups.html">User Groups</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./become_instructor.html">Become Instructor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./organization_users.html">Organization Users</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#crm" aria-expanded="false" aria-controls="crm">
+              <i class="ti-direction-alt menu-icon"></i>
+              <span class="menu-title">CRM</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="crm">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./notification_templates.html">Notifications</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./noticeboard.html">Noticeboard</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./class_support_messages.html">Classes Support</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./reports.html">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#marketing" aria-expanded="false" aria-controls="marketing">
+              <i class="ti-pie-chart menu-icon"></i>
+              <span class="menu-title">Marketing</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="marketing">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./discount_code.html">Discount Codes</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#financial" aria-expanded="false" aria-controls="financial">
+              <i class="ti-money menu-icon"></i>
+              <span class="menu-title">Financial</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="financial">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./balances_list.html">Balances List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./payout_requests.html">Request Payout</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./payout.html">Payout Process</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./offline_payment.html">Offline Payments</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./subscribe.html">Subscribe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./sales_list.html">Sales List</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="settings">
+              <i class="ti-settings menu-icon"></i>
+              <span class="menu-title">Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="settings">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./general_settings.html">General</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./financial_settings.html">Financial</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./payment_gateways.html">Payment Gateways</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./personalization.html">Personalization</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./seo.html">SEO Settings</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./seo.html">Security Settings</a></li>
+
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#configuration" aria-expanded="false" aria-controls="configuration">
+              <i class="ti-panel menu-icon"></i>
+              <span class="menu-title">Configuration</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="configuration">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./smtp.html">SMTP Configuration</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./zoom.html">Zoom Integration</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./amazon_s3.html">Amazon S3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./debugger.html">Debugger</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./file_manager.html">File Manager</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./google_sign_in.html">Google Sign-in</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./cronjobs.html">CronJobs</a></li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#cutomization" aria-expanded="false" aria-controls="cutomization">
+              <i class="ti-palette menu-icon"></i>
+              <span class="menu-title">Cutomization</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="cutomization">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./language.html">Languages</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./custom_css_js.html">Custom CSS & JS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./timezone.html">Timezone</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./colors.html">Change Colors</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./fonts.html">Change Fonts</a></li>
+
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./credits.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Credits</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      <!-- content -->
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="mb-3 font-weight-bold">Create a class</h3>  
+                  <h5 class="font-weight-normal" style="line-height: 180%;">
+
+                    Instructors and organizations can create courses using the course creation wizard. Users can access the course creation wizard from the &ldquo;Create course&rdquo; in the header or &ldquo;Instructor panel/ Classes/ New&rdquo;<br />The course creation wizard includes 8 steps that should be passed for a class to be created.<br /><br />
+    
+                    <div class="row">
+                      <div>
+                         <img style="float: left; margin: 0px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step1.jpg"  />
+                      </div>
+                     </div> 
+
+<span style="color: #000080;"><strong>Step 1 &ndash; Basic information:</strong></span><br />In this section, we are going to define the general information of the class.<br /><strong>Class type:</strong><br /><span style="color: #333399;">Live:</span> a live class or live class includes live sessions that could be conducted on live class providers like Bigbluebutton, Zoom, Google meet, etc.<br /><span style="color: #333399;">Course:</span> Courses are offline (like Udemy classes) so a course includes pre-recorded video files that the students will access after enrolling in the course.<br /><span style="color: #333399;">Text course:</span> Text courses are courses with text material. Each lesson will be included on a specific page.<br /><span style="color: #ff0000;">Note:</span> All of the class types include downloadable files and attachments with different formats so there are no limitations with class attachments.<br /><strong>Title:</strong> a short description for the class. The title should be a maximum of 64 characters that clarifies what is the class about.<br /><strong>Seo description:</strong> A 150 to 160 description about the course, that will be displayed on the search engine result page. It won't be displayed on the website.<br /><strong>Thumbnail image:</strong> The main image that will be displayed in the class cards. The preferred size is 360*250px.<br /><strong>Cover image:</strong> The cover image will be displayed at the top of the course page. The preferred size is 1920*530px.<br /><strong>Demo video:</strong> If you define a demo video for a class, it will be displayed in a pop-up when a user clicks on the course thumbnail.<br /><strong>Description:</strong> The class description that will be displayed on the class page includes all of the information about the course educational material, instructor, and other related information that will motivate viewers to enroll in the course. We suggest writing at least 300 words for this page because it is one of the most important SEO requirements.<br /><br />
+                    
+<div class="row">
+  <div>
+     <img style="float: left; margin: 0px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step2.jpg"  />
+  </div>
+ </div> 
+
+ <span style="color: #000080;"><strong>Step 2 &ndash; Extra information:</strong></span><br />This step is different for different class types (Live, Course, Text course) so we are going to explain it for each content type.<br /><strong>Capacity (Only Live Classes):</strong> Number of the students that each class can host. It means you can create capacity limited classes. When a class capacity is reached, the class registration will be closed. The class capacity will be indicated with a progress bar on the course card.<br /><strong>Start date (Only Live Classes):</strong> The start time for the live class. Users will be able to purchase the live class until this date and when this date passed, the live class registration will be closed. Also, all of the live session dates should be defined after this date.<br /><strong>Duration:</strong> The duration of the whole live class. This time will be displayed on the live class page so the user can realize the course duration.<br /><strong>Support:</strong> If this option is turned on, the class support option will be available for students so they will be able to send their support conversation through their panel and the instructor will be able to review student requests and respond to them.<br />The course support status will be displayed in the course page sidebar so this option could be used as a competitive feature.<br /><strong>Downloadable:</strong> If you want to allow users to download the course material such as course videos, you can turn this option on. This button will specify that your course is downloadable and this case will be presented to the user on the course page.<br />You will be able to enable or disable downloads for each part of the content so this toggle just will specify that the course is downloadable or not and it will be presented on the course filter page.<br />For example, if you have a course that you don&rsquo;t want allow to the user to download course videos but there are several projects, assets, or materials that you want to allow to the students to download them so you should turn the &ldquo;Download&rdquo; toggle button off.<br />Or imagine that you have a live class that you want to allow users to download all of the recorded sessions after the live class finished so you should turn this toggle on.<br /><span style="color: #ff0000;">Note:</span> This toggle button won't disable downloads and you will be able to enable or disable downloads for each file when you define a file. (How to?)<br /><strong>Partner instructor:</strong> If you want to invite another instructor to your course, you should turn this toggle on so the partner instructor dropdown will be displayed and you will be to add single or multiple instructors to the course. The invited instructor profile will be displayed on the course page and the invited instructor will be able to view the course through the &ldquo;Instructor panel/ Classes/ Invited classes&rdquo;.<br /><strong>Tags:</strong> Assigning tags to the courses will help users to find the related content. Tags will be displayed on the course page and when a user clicks on a tag, will be redirected to the tag page. All of the related contents to the tag will be displayed on the tag page.<br /><strong>Category:</strong> When the course category is selected from the dropdown, the category filters will be displayed in the related cards so you can select the related categories.
+
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step3.jpg"  />
+  </div>
+ </div> 
+
+ <span style="color: #000080;"><strong>Step 3 &ndash; Pricing:</strong></span><br /><strong>Subscribe:</strong> The subscribe feature will allow the student to enroll in the course using the subscribe system so if the &ldquo;Subscribe&rdquo; toggle is turned on, the student will be able to enroll in the course without direct purchasing.<br /><strong>Price:</strong> The class price is the amount that the user should pay for enrolling in the course. Use the &ldquo;0&rdquo; value for this field if you want to publish a course for free.<br /><strong>Sales plans:</strong> Sales plans are price variations that could be defined to encourage users to enroll in the course depending on the different parameters.<br />Sale plans could be defined depending on the course students count and the date.
+<br/><span style="color: #ff0000;">Note:</span> When you are going to define a pricing plan for a live class that includes capacity, the remained capacity will be displayed at the bottom of the capacity input.<br/>
+<strong>Examples:</strong><br />30% of the discount for the first 10 students.<br />50% of discount for two days since the class published.<br />20% of discount for 5 students that enroll in the course on the first publishing day.<br />The course pricing plans will be displayed on the course page and users can enroll in the course using them. When a pricing plan capacity is reached or the date passed, it will be disabled.<br />Note: A course pricing plan is an option so you can sell your course without this feature. All of the discounts will be added to the course price.
+
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step4.jpg"  />
+  </div>
+ </div> 
+
+ <span style="color: #000080;"><strong>Step 4 &ndash; Contents:</strong></span><br />This step is the most important step in the course creation process. All of the course materials like videos, files, projects, live session, assets, circulium, etc will be This steps varies depending to the class type (Live Class, course, text course). We are going to explain different content types that could be defined as course content.<br />You can use class sections for categorizing different class contents like live sessions, files, or text lessons.<br />You can create sections when you are defining a class and assign class educational materials to them.<br />If you don't assign a section to content, it will be displayed on the general list.<br />You can assign quizzes to a specific chapter. If you assign a quiz to a section, it will be displayed at the bottom of the section.<br />You can assign quizzes to sections from the quiz creation/editing form.<br /><br /><strong>Live class contents:</strong><br />If you are going to create a live class, there two content types that could be defined:<br /><span style="color: #333399;"><strong>A-Live Class sessions:</strong></span>&nbsp;To add a new live class session, click on the &ldquo;Add session&rdquo; button and fill in the required information.<br /><span style="color: #3366ff;">API:</span>&nbsp;The system that you want to use for conducting the live class. The script is integrated with Zoom and Bigbluebutton but you can use any other live meeting providers.<br /><span style="color: #3366ff;">Link:</span>&nbsp;The meeting URL that will be accessible for the student at the meeting time (It will be generated automatically when using Zoom or BBB).<br /><span style="color: #3366ff;">Password:</span>&nbsp;If the meeting provider that you use, requires the password for joining the live classes, you should define the password. This password will be displayed for students.<br />If you are using Zoom or BBB using the platform API, it will be generated automatically.<br /><span style="color: #333399;"><strong>B- Files:</strong></span>&nbsp;You can use files for video course parts, projects, assets, etc. To add a file click on the &ldquo;Add file&rdquo; button and fill out the required information.<br /><span style="color: #3366ff;">Accessibility:</span>&nbsp;Users will be able to access &ldquo;Free&rdquo; files without purchasing the class. For &ldquo;Paid&rdquo; files, the student should enroll in the course to access them.<br /><span style="color: #3366ff;">Source:</span>&nbsp;For Youtube &amp; Vimeo files select the related radio button and select &ldquo;Local&rdquo; for files that you want to upload from your computer.<br /><span style="color: #3366ff;">Description:</span>&nbsp;The description will be displayed on the class page for each file.<br /><span style="color: #3366ff;">Downloadable:</span>&nbsp;If you want to allow users to download the file, turn it on and turn it off if you want to allow users to just play the file.<br />Turn this option on if your file format is not video.<br /><span style="color: #333399;"><strong>C- Text lessons:</strong></span>&nbsp;If you select the &ldquo;Text course&rdquo; in the first step as the course type, you can define text lessons as course parts.<br /><span style="color: #3366ff;">Title:</span>&nbsp;The tile will be displayed in the lesson page header and lessons list.<br /><span style="color: #3366ff;">Study time:</span>&nbsp;Estimated time for reading the text lesson.<br /><span style="color: #3366ff;">Image:</span>&nbsp;The image that will be displayed on the lesson page.<br /><span style="color: #3366ff;">Accessibility:</span>&nbsp;Users will be able to access &ldquo;Free&rdquo; lessons without purchasing the class. For &ldquo;Paid&rdquo; lessons, the student should enroll in the course to access them.<br /><span style="color: #3366ff;">Attachments:</span>&nbsp;You can assign predefined attachments to a text lesson (Projects, related files, etc) so you should define course files and select them from the dropdown. All of the related attachments will be displayed on the lesson page.<br /><span style="color: #3366ff;">Summary:</span>&nbsp;a brief description of each lesson will be displayed on the course page.<br /><span style="color: #3366ff;">Content:</span>&nbsp;The text course content will be displayed on each lesson page. HTML content supported.
+
+ <strong>New file source type introduction : </strong><br /><span style="color: #008000;">Google drive:</span> You Will be able to use google drive as file storage hosting.<br />If you use google drive source type for your files, you need to use embed code.<br />First, preview your file on google dri
+
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/google_drive_1.jpg"  />
+  </div>
+ </div> 
+
+ Select open in a new window.<br />A new tab will open, then select embed and copy embed code in opened modal.<br /><span style="color: #ff0000;">Note:</span> make sure your file is shared with everyone.
+    
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/google_drive_2.jpg"  />
+  </div>
+ </div> 
+
+ <span style="color: #008000;">iframe:</span> you should copy the iframe code and copy it without any changes .in some websites iframe code is labeled as the "embed" option.
+
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/iframe.jpg"  />
+  </div>
+ </div> 
+
+
+<div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step5.jpg"  />
+  </div>
+ </div> 
+
+ <strong><span style="color: #000080;">Step 5 &ndash; Prerequisites:</span></strong><br />Prerequisites will be displayed on the class page. There are two prerequisites types:<br /><strong>A: Required:</strong> It means the student must pass the prerequisite to be able to enroll in the course.<br /><strong>B: Optional:</strong> This type of prerequisites are is for user information so the user just knows that it is better to learn those courses and there is no obligation to pass them.<br />To add a new prerequisite click on the &ldquo;Add&rdquo; button and search in existing courses. If you want to add a &ldquo;Required&rdquo; prerequisite turn the toggle button on.
+
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step6.jpg"  />
+  </div>
+ </div> 
+
+ <span style="color: #000080;"><strong>Step 6 &ndash; FAQ:</strong></span><br />FAQ items will be displayed on the course page as expandable accordions. Each FAQ item includes a question and a related answer.<br />To add a new FAQ item click on the &ldquo;Add&rdquo; button and fill out the required fields.
+
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step7.jpg"  />
+  </div>
+ </div> 
+
+ <span style="color: #000080;"><strong>Step 7 &ndash; Quiz and certification:</strong></span><br />You can add quiz and certificates to a course in the course creation wizard.<br />To add a quiz, click on the &ldquo;Add&rdquo; button and fill out the requested data.<br /><strong>Quiz title:</strong> This will be displayed on the class page.<br /><strong>Time:</strong> The quiz duration. If the quiz duration passed, the quiz will be finished and the result will be calculated automatically.<br /><strong>Attempts:</strong> If you want to allow for the student to enroll to start a quiz several times, you can specify attempt times.<br /><strong>Pass mark:</strong> If the quiz includes a certificate, the certificate will be awarded to the student when reaches the pass mark.<br /><strong>Certificate:</strong> If a quiz includes a certificate, turn this toggle on.<br /><strong>Active:</strong> To show the quiz on the course page, turn it on.<br />You can define quiz questions after the quiz is saved. Now click on the &ldquo;Add multiple choice&rdquo; and &ldquo;Add descriptive&rdquo; questions and define questions.<br />For multiple-choice questions, you can use images and texts as answers.<br />Each question has a grade that should be defined to avoid errors.<br />For descriptive questions define a correct answer so the student will be able to view the correct answer after the quiz finished and all of the attempts passed.
+
+
+ <div class="row">
+  <div>
+     <img style="float: left; margin: 15px 0px 20px 0px; border: 1px solid #ececec;" class="rounded mx-auto d-block" src="../images/step8.jpg"  />
+  </div>
+ </div> 
+
+ <span style="color: #000080;"><strong>Step 8 &ndash; Confirmation:</strong></span><br />In this step, the instructor should agree on terms and rules. If there are important points for a reviewer, the instructor can write them in the message field.
+
+
+
+
+</h5>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+       <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023. <a href="https://codecanyon.net/user/rocketsoft" target="_blank">Rocket LMS Documentation</a> from <a href="https://codecanyon.net/user/rocketsoft" target="_blank">Rocketsoft</a>. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../vendors/chart.js/Chart.min.js"></script>
+  <script src="../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="../js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../js/off-canvas.js"></script>
+  <script src="../js/hoverable-collapse.js"></script>
+  <script src="../js/template.js"></script>
+  <script src="../js/settings.js"></script>
+  <script src="../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../js/dashboard.js"></script>
+  <script src="../js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

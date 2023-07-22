@@ -1,0 +1,68 @@
+﻿
+@model Tale
+
+@{
+    ViewData["title"] = "Masal Ekleme";
+}
+<h2>
+    @ViewData["title"]
+</h2>
+<div class="card">
+    <div class="card-body">
+
+        <form method="post" enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="Title"></label>
+                <input class="form-control" asp-for="Title" placeholder="Başlık">
+                <span asp-validation-for="Title"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" asp-for="Text"></label>
+                <textarea asp-for="Text" class="form-control" placeholder="Masal İçeriğini Giriniz" id="Text" style="height: 100px"></textarea>
+                <span asp-validation-for="Text"></span>
+
+               
+            </div>
+           
+            
+            <div class="mb-3">
+                <label for="PhotoFile" class="form-label" asp-for="Photo"></label>
+                <input class="form-control" type="file" id="PhotoFile" name="PhotoFile">
+
+            </div>
+            
+
+          
+
+
+            <button type="submit" class="btn btn-primary">
+                Kaydet
+            </button>
+            <a class="btn btn-link" asp-action="Index">İptal</a>
+
+        </form>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+        <partial name="_ValidationScriptsPartial" />
+
+
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <script>
+        $(() => {
+            $('.summernote').summernote({
+                height: 200
+            });
+        })
+    </script>
+}
+
+
+

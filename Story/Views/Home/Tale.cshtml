@@ -1,0 +1,23 @@
+﻿@model Tale
+@{
+    ViewData["title"] = Model.Title;
+}
+<section id="service-details" class="service-details">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-8">
+            <div class="col-lg-8">
+            </div>
+            <div class="col-lg-10">
+                <img src=@Model.Photo alt="" style="display: block; margin: auto;" height="500px" width="500px" class="img-fluid services-img">             
+                <h3>@Model.Title </h3>
+                <p>
+                   @Model.Text
+                </p>
+                <p>
+                   @Model.Date
+                </p>              
+            </div>
+        </div>
+    </div>
+</section><!-- End Service Details Section -->

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/Admin/vendors/feather/feather.css">
+    <link rel="stylesheet" href="~/Admin/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Admin/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="~/Admin/vendors/datatables.net-bs5/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="~/Admin/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="~/Admin/js/select.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/Admin/css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="~/Admin/images/favicon.png" />
+</head>
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/logo.png" class="mr-0" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.jpg" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav navbar-nav-center">
+                    <li class="nav-item nav-search d-none d-lg-block">
+                        <div class="input-group">
+                            <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                                <span class="input-group-text" id="search">
+                                    <i class="icon-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav user-select-none">
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Dashboard" asp-action="Index">
+                            <i class="ti-world menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+
+
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#content" aria-expanded="false" aria-controls="content">
+                            <i class="ti-write menu-icon"></i>
+                            <span class="menu-title">Content</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="content">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" asp-controller="Products" asp-action="Index"> Product</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-controller="Categories" asp-action="Index"> Category</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#users" aria-expanded="false" aria-controls="users">
+                            <i class="ti-user menu-icon"></i>
+                            <span class="menu-title">Users</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="users">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" asp-controller="AppUsers" asp-action="Index">User Roles</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/user_groups.html">User Groups</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/become_instructor.html">Become Instructor</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/organization_users.html">Organization Users</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="settings">
+                            <i class="ti-settings menu-icon"></i>
+                            <span class="menu-title">Settings</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="settings">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="./pages/general_settings.html">General</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/financial_settings.html">Financial</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/payment_gateways.html">Payment Gateways</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/personalization.html">Personalization</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/seo.html">SEO Settings</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/seo.html">Security Settings</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#configuration" aria-expanded="false" aria-controls="configuration">
+                            <i class="ti-panel menu-icon"></i>
+                            <span class="menu-title">Configuration</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="configuration">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="./pages/smtp.html">SMTP Configuration</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/zoom.html">Zoom Integration</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/amazon_s3.html">Amazon S3</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/debugger.html">Debugger</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/file_manager.html">File Manager</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/google_sign_in.html">Google Sign-in</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/cronjobs.html">CronJobs</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#cutomization" aria-expanded="false" aria-controls="cutomization">
+                            <i class="ti-palette menu-icon"></i>
+                            <span class="menu-title">Cutomization</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="cutomization">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="./pages/language.html">Languages</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/custom_css_js.html">Custom CSS & JS</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/timezone.html">Timezone</a></li>
+                                <li class="nav-item">  <a class="nav-link" asp-controller="Color" asp-action="Index">Chance Color</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./pages/fonts.html">Change Fonts</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+
+
+
+            <!-- content -->
+            @RenderBody()
+
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="~/Admin/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="~/Admin/vendors/chart.js/Chart.min.js"></script>
+    <script src="~/Admin/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="~/Admin/vendors/datatables.net-bs5/dataTables.bootstrap4.js"></script>
+    <script src="~/Admin/js/dataTables.select.min.js"></script>
+
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="~/Admin/js/off-canvas.js"></script>
+    <script src="~/Admin/js/hoverable-collapse.js"></script>
+    <script src="~/Admin/js/template.js"></script>
+    <script src="~/Admin/js/settings.js"></script>
+    <script src="~/Admin/js/todolist.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="~/Admin/js/dashboard.js"></script>
+    <script src="~/Admin/js/Chart.roundedBarCharts.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+</html>
+
+      @await RenderSectionAsync("Scripts", required: false)
+<script>
+    @if (TempData["success"] is not null)
+    {
+        <text>
+            Swal.fire({
+                toast: true,
+            position: 'top',
+            icon: 'success',
+            title: '@TempData["success"]',
+            showConfirmButton : false,
+            timer : 5000
+        })
+        </text>
+    }
+
+    @if (TempData["error"] is not null)
+    {
+        <text>
+            Swal.fire({
+                toast: true,
+            position: 'top',
+            icon: 'error',
+            title: '@TempData["error"]',
+            showConfirmButton : false,
+            timer : 5000
+            })
+        </text>
+    }
+</script>
